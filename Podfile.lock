@@ -4,6 +4,10 @@ PODS:
     - Alamofire (>= 5.0)
   - IQKeyboardManagerSwift (6.5.12)
   - MOLH (1.4.3)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
@@ -18,6 +22,7 @@ DEPENDENCIES:
   - AlamofireEasyLogger
   - IQKeyboardManagerSwift
   - MOLH
+  - Moya
   - NVActivityIndicatorView
   - SDWebImage
   - SkeletonView
@@ -29,6 +34,7 @@ SPEC REPOS:
     - AlamofireEasyLogger
     - IQKeyboardManagerSwift
     - MOLH
+    - Moya
     - NVActivityIndicatorView
     - SDWebImage
     - SkeletonView
@@ -39,11 +45,12 @@ SPEC CHECKSUMS:
   AlamofireEasyLogger: f2fd10b57d973593a79a4b61f274c6a5cb3e1333
   IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
   MOLH: e45827d200aeb1310641090fd8cd03ad2b42ae72
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
   SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 616105ab0792b3d8d06f41c61dcde6812bcea498
+PODFILE CHECKSUM: 2c42572de0015acf2033f1be3e13383f549a1ee3
 
 COCOAPODS: 1.13.0
