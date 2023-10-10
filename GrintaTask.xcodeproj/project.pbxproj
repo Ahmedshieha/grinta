@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B27C7A043C39B6C43CE989 /* Pods_GrintaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CE3BB8CEE82AEEEB5D7F8D /* Pods_GrintaTask.framework */; };
+		D93E9CB62AD5F35800178D57 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CA82AD5F35800178D57 /* SwiftyJSON.swift */; };
+		D93E9CB72AD5F35800178D57 /* AsyncRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CA92AD5F35800178D57 /* AsyncRequest.swift */; };
+		D93E9CB82AD5F35800178D57 /* JsonEncadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CAA2AD5F35800178D57 /* JsonEncadable.swift */; };
+		D93E9CB92AD5F35800178D57 /* RequestEncodingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CAB2AD5F35800178D57 /* RequestEncodingType.swift */; };
+		D93E9CBA2AD5F35800178D57 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CAC2AD5F35800178D57 /* AppError.swift */; };
+		D93E9CBB2AD5F35800178D57 /* MakeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CAD2AD5F35800178D57 /* MakeRequest.swift */; };
+		D93E9CBC2AD5F35800178D57 /* RequestUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CAE2AD5F35800178D57 /* RequestUrl.swift */; };
+		D93E9CBD2AD5F35800178D57 /* AppRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CAF2AD5F35800178D57 /* AppRequestInterceptor.swift */; };
+		D93E9CBE2AD5F35800178D57 /* UploadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CB02AD5F35800178D57 /* UploadData.swift */; };
+		D93E9CBF2AD5F35800178D57 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CB12AD5F35800178D57 /* RequestMethod.swift */; };
+		D93E9CC02AD5F35800178D57 /* UnknownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CB22AD5F35800178D57 /* UnknownType.swift */; };
+		D93E9CC12AD5F35800178D57 /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CB32AD5F35800178D57 /* NetworkState.swift */; };
+		D93E9CC22AD5F35800178D57 /* BaseResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CB42AD5F35800178D57 /* BaseResponseProtocol.swift */; };
+		D93E9CC32AD5F35800178D57 /* RequestReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CB52AD5F35800178D57 /* RequestReusable.swift */; };
+		D9F815602AD5EC2000BB1D1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F8155F2AD5EC2000BB1D1D /* AppDelegate.swift */; };
+		D9F815622AD5EC2000BB1D1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F815612AD5EC2000BB1D1D /* SceneDelegate.swift */; };
+		D9F815642AD5EC2000BB1D1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F815632AD5EC2000BB1D1D /* ViewController.swift */; };
+		D9F815672AD5EC2000BB1D1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F815652AD5EC2000BB1D1D /* Main.storyboard */; };
+		D9F815692AD5EC2300BB1D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F815682AD5EC2300BB1D1D /* Assets.xcassets */; };
+		D9F8156C2AD5EC2300BB1D1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F8156A2AD5EC2300BB1D1D /* LaunchScreen.storyboard */; };
+		D9F815772AD5EC2300BB1D1D /* GrintaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F815762AD5EC2300BB1D1D /* GrintaTaskTests.swift */; };
+		D9F815812AD5EC2300BB1D1D /* GrintaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F815802AD5EC2300BB1D1D /* GrintaTaskUITests.swift */; };
+		D9F815832AD5EC2300BB1D1D /* GrintaTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F815822AD5EC2300BB1D1D /* GrintaTaskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9F815732AD5EC2300BB1D1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F815542AD5EC2000BB1D1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F8155B2AD5EC2000BB1D1D;
+			remoteInfo = GrintaTask;
+		};
+		D9F8157D2AD5EC2300BB1D1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F815542AD5EC2000BB1D1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F8155B2AD5EC2000BB1D1D;
+			remoteInfo = GrintaTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D1BB6E63FB6B20ADAEA6439 /* Pods-GrintaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrintaTask.release.xcconfig"; path = "Target Support Files/Pods-GrintaTask/Pods-GrintaTask.release.xcconfig"; sourceTree = "<group>"; };
+		8DD2D45F16A8207E5D72CE80 /* Pods-GrintaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrintaTask.debug.xcconfig"; path = "Target Support Files/Pods-GrintaTask/Pods-GrintaTask.debug.xcconfig"; sourceTree = "<group>"; };
+		D5CE3BB8CEE82AEEEB5D7F8D /* Pods_GrintaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrintaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93E9CA82AD5F35800178D57 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		D93E9CA92AD5F35800178D57 /* AsyncRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncRequest.swift; sourceTree = "<group>"; };
+		D93E9CAA2AD5F35800178D57 /* JsonEncadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonEncadable.swift; sourceTree = "<group>"; };
+		D93E9CAB2AD5F35800178D57 /* RequestEncodingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestEncodingType.swift; sourceTree = "<group>"; };
+		D93E9CAC2AD5F35800178D57 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		D93E9CAD2AD5F35800178D57 /* MakeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeRequest.swift; sourceTree = "<group>"; };
+		D93E9CAE2AD5F35800178D57 /* RequestUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestUrl.swift; sourceTree = "<group>"; };
+		D93E9CAF2AD5F35800178D57 /* AppRequestInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRequestInterceptor.swift; sourceTree = "<group>"; };
+		D93E9CB02AD5F35800178D57 /* UploadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadData.swift; sourceTree = "<group>"; };
+		D93E9CB12AD5F35800178D57 /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		D93E9CB22AD5F35800178D57 /* UnknownType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnknownType.swift; sourceTree = "<group>"; };
+		D93E9CB32AD5F35800178D57 /* NetworkState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
+		D93E9CB42AD5F35800178D57 /* BaseResponseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponseProtocol.swift; sourceTree = "<group>"; };
+		D93E9CB52AD5F35800178D57 /* RequestReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestReusable.swift; sourceTree = "<group>"; };
+		D9F8155C2AD5EC2000BB1D1D /* GrintaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrintaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F8155F2AD5EC2000BB1D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9F815612AD5EC2000BB1D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D9F815632AD5EC2000BB1D1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9F815662AD5EC2000BB1D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9F815682AD5EC2300BB1D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9F8156B2AD5EC2300BB1D1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9F8156D2AD5EC2300BB1D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F815722AD5EC2300BB1D1D /* GrintaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrintaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F815762AD5EC2300BB1D1D /* GrintaTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrintaTaskTests.swift; sourceTree = "<group>"; };
+		D9F8157C2AD5EC2300BB1D1D /* GrintaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrintaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F815802AD5EC2300BB1D1D /* GrintaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrintaTaskUITests.swift; sourceTree = "<group>"; };
+		D9F815822AD5EC2300BB1D1D /* GrintaTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrintaTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9F815592AD5EC2000BB1D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B27C7A043C39B6C43CE989 /* Pods_GrintaTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F8156F2AD5EC2300BB1D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F815792AD5EC2300BB1D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77453B1991FB245EE8187D02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DD2D45F16A8207E5D72CE80 /* Pods-GrintaTask.debug.xcconfig */,
+				2D1BB6E63FB6B20ADAEA6439 /* Pods-GrintaTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D93E9CA72AD5F35800178D57 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D93E9CA82AD5F35800178D57 /* SwiftyJSON.swift */,
+				D93E9CA92AD5F35800178D57 /* AsyncRequest.swift */,
+				D93E9CAA2AD5F35800178D57 /* JsonEncadable.swift */,
+				D93E9CAB2AD5F35800178D57 /* RequestEncodingType.swift */,
+				D93E9CAC2AD5F35800178D57 /* AppError.swift */,
+				D93E9CAD2AD5F35800178D57 /* MakeRequest.swift */,
+				D93E9CAE2AD5F35800178D57 /* RequestUrl.swift */,
+				D93E9CAF2AD5F35800178D57 /* AppRequestInterceptor.swift */,
+				D93E9CB02AD5F35800178D57 /* UploadData.swift */,
+				D93E9CB12AD5F35800178D57 /* RequestMethod.swift */,
+				D93E9CB22AD5F35800178D57 /* UnknownType.swift */,
+				D93E9CB32AD5F35800178D57 /* NetworkState.swift */,
+				D93E9CB42AD5F35800178D57 /* BaseResponseProtocol.swift */,
+				D93E9CB52AD5F35800178D57 /* RequestReusable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D9F815532AD5EC2000BB1D1D = {
+			isa = PBXGroup;
+			children = (
+				D9F8155E2AD5EC2000BB1D1D /* GrintaTask */,
+				D9F815752AD5EC2300BB1D1D /* GrintaTaskTests */,
+				D9F8157F2AD5EC2300BB1D1D /* GrintaTaskUITests */,
+				D9F8155D2AD5EC2000BB1D1D /* Products */,
+				77453B1991FB245EE8187D02 /* Pods */,
+				F1B1D7C6FE19B5742DE46670 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D9F8155D2AD5EC2000BB1D1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9F8155C2AD5EC2000BB1D1D /* GrintaTask.app */,
+				D9F815722AD5EC2300BB1D1D /* GrintaTaskTests.xctest */,
+				D9F8157C2AD5EC2300BB1D1D /* GrintaTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9F8155E2AD5EC2000BB1D1D /* GrintaTask */ = {
+			isa = PBXGroup;
+			children = (
+				D9F8155F2AD5EC2000BB1D1D /* AppDelegate.swift */,
+				D9F815612AD5EC2000BB1D1D /* SceneDelegate.swift */,
+				D9F815632AD5EC2000BB1D1D /* ViewController.swift */,
+				D9F815652AD5EC2000BB1D1D /* Main.storyboard */,
+				D9F815682AD5EC2300BB1D1D /* Assets.xcassets */,
+				D9F8156A2AD5EC2300BB1D1D /* LaunchScreen.storyboard */,
+				D9F8156D2AD5EC2300BB1D1D /* Info.plist */,
+				D93E9CA72AD5F35800178D57 /* Network */,
+			);
+			path = GrintaTask;
+			sourceTree = "<group>";
+		};
+		D9F815752AD5EC2300BB1D1D /* GrintaTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9F815762AD5EC2300BB1D1D /* GrintaTaskTests.swift */,
+			);
+			path = GrintaTaskTests;
+			sourceTree = "<group>";
+		};
+		D9F8157F2AD5EC2300BB1D1D /* GrintaTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9F815802AD5EC2300BB1D1D /* GrintaTaskUITests.swift */,
+				D9F815822AD5EC2300BB1D1D /* GrintaTaskUITestsLaunchTests.swift */,
+			);
+			path = GrintaTaskUITests;
+			sourceTree = "<group>";
+		};
+		F1B1D7C6FE19B5742DE46670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5CE3BB8CEE82AEEEB5D7F8D /* Pods_GrintaTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9F8155B2AD5EC2000BB1D1D /* GrintaTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F815862AD5EC2300BB1D1D /* Build configuration list for PBXNativeTarget "GrintaTask" */;
+			buildPhases = (
+				19E91125DA96F625A725F470 /* [CP] Check Pods Manifest.lock */,
+				D9F815582AD5EC2000BB1D1D /* Sources */,
+				D9F815592AD5EC2000BB1D1D /* Frameworks */,
+				D9F8155A2AD5EC2000BB1D1D /* Resources */,
+				4733A3376D700B7B8B3C9B4B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrintaTask;
+			productName = GrintaTask;
+			productReference = D9F8155C2AD5EC2000BB1D1D /* GrintaTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9F815712AD5EC2300BB1D1D /* GrintaTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F815892AD5EC2300BB1D1D /* Build configuration list for PBXNativeTarget "GrintaTaskTests" */;
+			buildPhases = (
+				D9F8156E2AD5EC2300BB1D1D /* Sources */,
+				D9F8156F2AD5EC2300BB1D1D /* Frameworks */,
+				D9F815702AD5EC2300BB1D1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F815742AD5EC2300BB1D1D /* PBXTargetDependency */,
+			);
+			name = GrintaTaskTests;
+			productName = GrintaTaskTests;
+			productReference = D9F815722AD5EC2300BB1D1D /* GrintaTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9F8157B2AD5EC2300BB1D1D /* GrintaTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F8158C2AD5EC2300BB1D1D /* Build configuration list for PBXNativeTarget "GrintaTaskUITests" */;
+			buildPhases = (
+				D9F815782AD5EC2300BB1D1D /* Sources */,
+				D9F815792AD5EC2300BB1D1D /* Frameworks */,
+				D9F8157A2AD5EC2300BB1D1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F8157E2AD5EC2300BB1D1D /* PBXTargetDependency */,
+			);
+			name = GrintaTaskUITests;
+			productName = GrintaTaskUITests;
+			productReference = D9F8157C2AD5EC2300BB1D1D /* GrintaTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9F815542AD5EC2000BB1D1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D9F8155B2AD5EC2000BB1D1D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D9F815712AD5EC2300BB1D1D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D9F8155B2AD5EC2000BB1D1D;
+					};
+					D9F8157B2AD5EC2300BB1D1D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D9F8155B2AD5EC2000BB1D1D;
+					};
+				};
+			};
+			buildConfigurationList = D9F815572AD5EC2000BB1D1D /* Build configuration list for PBXProject "GrintaTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9F815532AD5EC2000BB1D1D;
+			productRefGroup = D9F8155D2AD5EC2000BB1D1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9F8155B2AD5EC2000BB1D1D /* GrintaTask */,
+				D9F815712AD5EC2300BB1D1D /* GrintaTaskTests */,
+				D9F8157B2AD5EC2300BB1D1D /* GrintaTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9F8155A2AD5EC2000BB1D1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F8156C2AD5EC2300BB1D1D /* LaunchScreen.storyboard in Resources */,
+				D9F815692AD5EC2300BB1D1D /* Assets.xcassets in Resources */,
+				D9F815672AD5EC2000BB1D1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F815702AD5EC2300BB1D1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F8157A2AD5EC2300BB1D1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19E91125DA96F625A725F470 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrintaTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4733A3376D700B7B8B3C9B4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrintaTask/Pods-GrintaTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrintaTask/Pods-GrintaTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrintaTask/Pods-GrintaTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9F815582AD5EC2000BB1D1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93E9CBF2AD5F35800178D57 /* RequestMethod.swift in Sources */,
+				D93E9CC22AD5F35800178D57 /* BaseResponseProtocol.swift in Sources */,
+				D9F815642AD5EC2000BB1D1D /* ViewController.swift in Sources */,
+				D93E9CBC2AD5F35800178D57 /* RequestUrl.swift in Sources */,
+				D93E9CBD2AD5F35800178D57 /* AppRequestInterceptor.swift in Sources */,
+				D93E9CB82AD5F35800178D57 /* JsonEncadable.swift in Sources */,
+				D9F815602AD5EC2000BB1D1D /* AppDelegate.swift in Sources */,
+				D93E9CBB2AD5F35800178D57 /* MakeRequest.swift in Sources */,
+				D93E9CBE2AD5F35800178D57 /* UploadData.swift in Sources */,
+				D93E9CC02AD5F35800178D57 /* UnknownType.swift in Sources */,
+				D93E9CC12AD5F35800178D57 /* NetworkState.swift in Sources */,
+				D9F815622AD5EC2000BB1D1D /* SceneDelegate.swift in Sources */,
+				D93E9CBA2AD5F35800178D57 /* AppError.swift in Sources */,
+				D93E9CB72AD5F35800178D57 /* AsyncRequest.swift in Sources */,
+				D93E9CB92AD5F35800178D57 /* RequestEncodingType.swift in Sources */,
+				D93E9CB62AD5F35800178D57 /* SwiftyJSON.swift in Sources */,
+				D93E9CC32AD5F35800178D57 /* RequestReusable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F8156E2AD5EC2300BB1D1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F815772AD5EC2300BB1D1D /* GrintaTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F815782AD5EC2300BB1D1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F815832AD5EC2300BB1D1D /* GrintaTaskUITestsLaunchTests.swift in Sources */,
+				D9F815812AD5EC2300BB1D1D /* GrintaTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9F815742AD5EC2300BB1D1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9F8155B2AD5EC2000BB1D1D /* GrintaTask */;
+			targetProxy = D9F815732AD5EC2300BB1D1D /* PBXContainerItemProxy */;
+		};
+		D9F8157E2AD5EC2300BB1D1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9F8155B2AD5EC2000BB1D1D /* GrintaTask */;
+			targetProxy = D9F8157D2AD5EC2300BB1D1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9F815652AD5EC2000BB1D1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9F815662AD5EC2000BB1D1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9F8156A2AD5EC2300BB1D1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9F8156B2AD5EC2300BB1D1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9F815842AD5EC2300BB1D1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9F815852AD5EC2300BB1D1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9F815872AD5EC2300BB1D1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD2D45F16A8207E5D72CE80 /* Pods-GrintaTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UA7J8M967;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrintaTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedreda.GrintaTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9F815882AD5EC2300BB1D1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D1BB6E63FB6B20ADAEA6439 /* Pods-GrintaTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UA7J8M967;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GrintaTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedreda.GrintaTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9F8158A2AD5EC2300BB1D1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UA7J8M967;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedreda.GrintaTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrintaTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GrintaTask";
+			};
+			name = Debug;
+		};
+		D9F8158B2AD5EC2300BB1D1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UA7J8M967;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedreda.GrintaTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrintaTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GrintaTask";
+			};
+			name = Release;
+		};
+		D9F8158D2AD5EC2300BB1D1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UA7J8M967;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedreda.GrintaTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrintaTask;
+			};
+			name = Debug;
+		};
+		D9F8158E2AD5EC2300BB1D1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3UA7J8M967;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedreda.GrintaTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrintaTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9F815572AD5EC2000BB1D1D /* Build configuration list for PBXProject "GrintaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F815842AD5EC2300BB1D1D /* Debug */,
+				D9F815852AD5EC2300BB1D1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F815862AD5EC2300BB1D1D /* Build configuration list for PBXNativeTarget "GrintaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F815872AD5EC2300BB1D1D /* Debug */,
+				D9F815882AD5EC2300BB1D1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F815892AD5EC2300BB1D1D /* Build configuration list for PBXNativeTarget "GrintaTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F8158A2AD5EC2300BB1D1D /* Debug */,
+				D9F8158B2AD5EC2300BB1D1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F8158C2AD5EC2300BB1D1D /* Build configuration list for PBXNativeTarget "GrintaTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F8158D2AD5EC2300BB1D1D /* Debug */,
+				D9F8158E2AD5EC2300BB1D1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9F815542AD5EC2000BB1D1D /* Project object */;
+}
