@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BaseModel {
+struct BaseModel : Codable {
     
     let count : Int?
     let competition: Competition?
@@ -17,7 +17,7 @@ struct BaseModel {
 }
 
 
-struct Competition {
+struct Competition : Codable {
     let id : Int?
     let area :  Area?
     let name : String?
@@ -28,7 +28,7 @@ struct Competition {
 }
 
 
-struct Area {
+struct Area : Codable {
     let id : Int?
     let name : String?
 }

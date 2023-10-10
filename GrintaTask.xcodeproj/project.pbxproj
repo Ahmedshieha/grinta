@@ -15,6 +15,9 @@
 		D93E9CD52AD5FBB000178D57 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CD32AD5FBB000178D57 /* ApiService.swift */; };
 		D93E9CD62AD5FBB000178D57 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CD42AD5FBB000178D57 /* ApiProvider.swift */; };
 		D93E9CD92AD5FCB400178D57 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CD82AD5FCB400178D57 /* MatchModel.swift */; };
+		D93E9CE22AD609EF00178D57 /* ScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CE12AD609EF00178D57 /* ScreenState.swift */; };
+		D93E9CE42AD60B3900178D57 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CE32AD60B3900178D57 /* Publisher.swift */; };
+		D93E9CE62AD60D1B00178D57 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CE52AD60D1B00178D57 /* BaseController.swift */; };
 		D9F815602AD5EC2000BB1D1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F8155F2AD5EC2000BB1D1D /* AppDelegate.swift */; };
 		D9F815622AD5EC2000BB1D1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F815612AD5EC2000BB1D1D /* SceneDelegate.swift */; };
 		D9F815642AD5EC2000BB1D1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F815632AD5EC2000BB1D1D /* ViewController.swift */; };
@@ -54,6 +57,9 @@
 		D93E9CD32AD5FBB000178D57 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		D93E9CD42AD5FBB000178D57 /* ApiProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 		D93E9CD82AD5FCB400178D57 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
+		D93E9CE12AD609EF00178D57 /* ScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenState.swift; sourceTree = "<group>"; };
+		D93E9CE32AD60B3900178D57 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
+		D93E9CE52AD60D1B00178D57 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		D9F8155C2AD5EC2000BB1D1D /* GrintaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrintaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F8155F2AD5EC2000BB1D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9F815612AD5EC2000BB1D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D93E9CC42AD5F4FD00178D57 /* HomePage */,
+				D93E9CE52AD60D1B00178D57 /* BaseController.swift */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -151,16 +158,10 @@
 			children = (
 				D93E9CD32AD5FBB000178D57 /* ApiService.swift */,
 				D93E9CD42AD5FBB000178D57 /* ApiProvider.swift */,
-				D93E9CD22AD5FBB000178D57 /* APIService */,
+				D93E9CE12AD609EF00178D57 /* ScreenState.swift */,
+				D93E9CE32AD60B3900178D57 /* Publisher.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		D93E9CD22AD5FBB000178D57 /* APIService */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APIService;
 			sourceTree = "<group>";
 		};
 		D93E9CD72AD5FCA200178D57 /* Models */ = {
@@ -417,9 +418,12 @@
 				D9F815642AD5EC2000BB1D1D /* ViewController.swift in Sources */,
 				D93E9CCA2AD5F54F00178D57 /* HomeViewController.swift in Sources */,
 				D9F815602AD5EC2000BB1D1D /* AppDelegate.swift in Sources */,
+				D93E9CE22AD609EF00178D57 /* ScreenState.swift in Sources */,
 				D9F815622AD5EC2000BB1D1D /* SceneDelegate.swift in Sources */,
 				D93E9CD52AD5FBB000178D57 /* ApiService.swift in Sources */,
 				D93E9CD92AD5FCB400178D57 /* MatchModel.swift in Sources */,
+				D93E9CE42AD60B3900178D57 /* Publisher.swift in Sources */,
+				D93E9CE62AD60D1B00178D57 /* BaseController.swift in Sources */,
 				D93E9CD02AD5F59200178D57 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
