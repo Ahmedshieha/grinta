@@ -11,17 +11,15 @@ import Moya
 
  // enum for endPoints that i use
 
-enum ApiProvider {
+enum HomeProvider: TargetType {
     case getMatches
-    
-    
 }
 
 // extension for enum of targrtType which make it easy to handle url , methods , task and path of url 
-extension ApiProvider :TargetType , AccessTokenAuthorizable {
+extension HomeProvider : AccessTokenAuthorizable {
     
     var baseURL: URL {
-        URL(string: "https://api.football-data.org/v2/")!
+        URL(string: Constants.baseUrl)!
     }
     
     var path: String {

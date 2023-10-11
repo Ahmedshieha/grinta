@@ -10,14 +10,14 @@ import Moya
 
 
 
-protocol Network  {
-    var provider : MoyaProvider<ApiProvider> {get}
+protocol HomeNetwork  {
+    var provider : MoyaProvider<HomeProvider> {get}
     func getMatches(completion : @escaping (Result <BaseModel , Error>)-> Void)
 }
 // class for handle api methods
-struct NetworkManager  : Network {
+struct HomeNetworkManager  : HomeNetwork {
 
-    let provider = MoyaProvider<ApiProvider>(plugins : [NetworkLoggerPlugin(configuration: NetworkLoggerPlugin.Configuration(logOptions:.verbose))]
+    let provider = MoyaProvider<HomeProvider>(plugins : [NetworkLoggerPlugin(configuration: NetworkLoggerPlugin.Configuration(logOptions:.verbose))]
     )
     
     func getMatches(completion : @escaping (Result <BaseModel , Error>)-> Void) {
@@ -25,8 +25,8 @@ struct NetworkManager  : Network {
     }
 }
 
-private extension NetworkManager {
-    private func request<T: Decodable>(target: ApiProvider, completion: @escaping (Result<T, Error>) -> ()) {
+private extension HomeNetworkManager {
+    private func request<T: Decodable>(target: HomeProvider, completion: @escaping (Result<T, Error>) -> ()) {
         provider.request(target) { result in
             switch result {
             case let .success(response):

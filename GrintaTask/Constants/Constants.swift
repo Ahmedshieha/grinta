@@ -9,7 +9,7 @@ import Foundation
 struct Constants {
 
  
-    static let baseUrl = "https://api.football-data.org/v2/competitions/2021/matches"
+    static let baseUrl = "https://api.football-data.org/v2/"
     static let appUrl = "appUrl"
     static let apiKey = "335d91cce1f343249796e67ed19f14d3"
 

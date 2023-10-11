@@ -36,11 +36,11 @@ struct Area : Codable {
 struct Match: Codable {
     let id: Int?
     let season: Season?
-    let utcDate: Date?
+    let utcDate: String?
     let status: String?
     let matchday: Int?
     let stage: String?
-    let lastUpdated: Date?
+    let lastUpdated: String?
     let odds: Odds?
     let score: Score?
     let homeTeam, awayTeam: Team?

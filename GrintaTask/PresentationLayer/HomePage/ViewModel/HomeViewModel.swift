@@ -10,12 +10,15 @@ import Foundation
 
 class HomeViewModel {
     
-    @Published @MainActor var state : ScreenState<[Match]> = .ideal
+    @Published @MainActor var state : ScreenState<Void> = .ideal
     
-    private let manager = NetworkManager()
+    var matches : [Match] = []
+    
+    var dataSource = [Section]()
+    private let manager = HomeNetworkManager()
     var bag = AppBag()
     
-    
+    var grouped = Dictionary<String, [Match]>()
     
     
     @MainActor
@@ -26,13 +29,36 @@ class HomeViewModel {
             switch result {
             case .success(let data):
                 guard let matches = data.matches else {return}
-                self.state = .success(matches)
+                self.matches = matches
+                self.setSections()
+                self.state = .success(())
             case .failure(let error):
                 self.state = .failure(error.localizedDescription)
             }
         }
     }
+
+    func setSections () {
+        self.matches.forEach { match in
+            if !self.dataSource.contains(where: {$0.date.prefix(10) == match.utcDate?.prefix(10)}) {
+                self.dataSource.append(Section(date: String(match.utcDate?.prefix(10) ?? ""), matches: [match]))
+            } else {
+                guard let index = self.dataSource.firstIndex(where: {$0.date == match.utcDate}) else {return}
+                self.dataSource[index].matches.append(match)
+            }
+        }
+    }
+ 
     
     
+    class Section  {
+        var date: String
+        var matches: [Match]
+        
+        init(date: String, matches: [Match]) {
+            self.date = date
+            self.matches = matches
+        }
+    }
     
 }
