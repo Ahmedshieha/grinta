@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct BaseModel : Codable {
     
@@ -81,4 +82,6 @@ struct Season: Codable {
     let startDate, endDate: String?
     let currentMatchday: Int?
 }
+
+
 

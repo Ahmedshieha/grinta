@@ -26,6 +26,9 @@
 		D93E9CF52AD6A59A00178D57 /* MatchesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93E9CF32AD6A59A00178D57 /* MatchesTableViewCell.xib */; };
 		D93E9CF72AD6AB9F00178D57 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CF62AD6AB9F00178D57 /* UIImage+.swift */; };
 		D93E9CF92AD6ABCD00178D57 /* UiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CF82AD6ABCD00178D57 /* UiView.swift */; };
+		D93E9CFC2AD714CF00178D57 /* RealmMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CFB2AD714CF00178D57 /* RealmMManager.swift */; };
+		D979571C2AD73072008C2C2D /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979571B2AD73072008C2C2D /* String+.swift */; };
+		D979571E2AD7308D008C2C2D /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979571D2AD7308D008C2C2D /* Int+.swift */; };
 		D9F815602AD5EC2000BB1D1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F8155F2AD5EC2000BB1D1D /* AppDelegate.swift */; };
 		D9F815622AD5EC2000BB1D1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F815612AD5EC2000BB1D1D /* SceneDelegate.swift */; };
 		D9F815642AD5EC2000BB1D1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F815632AD5EC2000BB1D1D /* ViewController.swift */; };
@@ -75,6 +78,9 @@
 		D93E9CF32AD6A59A00178D57 /* MatchesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesTableViewCell.xib; sourceTree = "<group>"; };
 		D93E9CF62AD6AB9F00178D57 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		D93E9CF82AD6ABCD00178D57 /* UiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiView.swift; sourceTree = "<group>"; };
+		D93E9CFB2AD714CF00178D57 /* RealmMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMManager.swift; sourceTree = "<group>"; };
+		D979571B2AD73072008C2C2D /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		D979571D2AD7308D008C2C2D /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		D9F8155C2AD5EC2000BB1D1D /* GrintaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrintaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F8155F2AD5EC2000BB1D1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9F815612AD5EC2000BB1D1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,8 +218,18 @@
 				D93E9CF02AD6A4A200178D57 /* TableView+.swift */,
 				D93E9CF62AD6AB9F00178D57 /* UIImage+.swift */,
 				D93E9CF82AD6ABCD00178D57 /* UiView.swift */,
+				D979571B2AD73072008C2C2D /* String+.swift */,
+				D979571D2AD7308D008C2C2D /* Int+.swift */,
 			);
 			path = Ex;
+			sourceTree = "<group>";
+		};
+		D93E9CFA2AD714AE00178D57 /* Presist */ = {
+			isa = PBXGroup;
+			children = (
+				D93E9CFB2AD714CF00178D57 /* RealmMManager.swift */,
+			);
+			path = Presist;
 			sourceTree = "<group>";
 		};
 		D9F815532AD5EC2000BB1D1D = {
@@ -241,6 +257,7 @@
 		D9F8155E2AD5EC2000BB1D1D /* GrintaTask */ = {
 			isa = PBXGroup;
 			children = (
+				D93E9CFA2AD714AE00178D57 /* Presist */,
 				D93E9CE92AD69E0D00178D57 /* Ex */,
 				D93E9CE72AD69C8000178D57 /* Base */,
 				D93E9CD72AD5FCA200178D57 /* Models */,
@@ -473,10 +490,13 @@
 				D93E9CD52AD5FBB000178D57 /* ApiService.swift in Sources */,
 				D93E9CD92AD5FCB400178D57 /* MatchModel.swift in Sources */,
 				D93E9CEF2AD6A43900178D57 /* HomeViewControllerExtension.swift in Sources */,
+				D979571E2AD7308D008C2C2D /* Int+.swift in Sources */,
 				D93E9CE42AD60B3900178D57 /* Publisher.swift in Sources */,
 				D93E9CF72AD6AB9F00178D57 /* UIImage+.swift in Sources */,
 				D93E9CE62AD60D1B00178D57 /* BaseController.swift in Sources */,
 				D93E9CD02AD5F59200178D57 /* Constants.swift in Sources */,
+				D979571C2AD73072008C2C2D /* String+.swift in Sources */,
+				D93E9CFC2AD714CF00178D57 /* RealmMManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

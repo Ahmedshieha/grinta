@@ -37,18 +37,18 @@ class HomeViewModel {
             }
         }
     }
-
-    func setSections () {
-        self.matches.forEach { match in
-            if !self.dataSource.contains(where: {$0.date.prefix(10) == match.utcDate?.prefix(10)}) {
-                self.dataSource.append(Section(date: String(match.utcDate?.prefix(10) ?? ""), matches: [match]))
-            } else {
-                guard let index = self.dataSource.firstIndex(where: {$0.date == match.utcDate}) else {return}
-                self.dataSource[index].matches.append(match)
-            }
-        }
-    }
  
+    func setSections()  {
+        let daytransactions = Dictionary(grouping: matches) { (list) -> String.SubSequence in
+            return list.utcDate?.prefix(10) ?? ""
+        }
+        self.dataSource =  daytransactions.map { (key , value) in
+            return Section(date: String(key), matches: value)
+        }
+        self.dataSource = self.dataSource.sorted(by: {$0.date < $1.date})
+       
+        
+    }
     
     
     class Section  {
@@ -59,6 +59,17 @@ class HomeViewModel {
             self.date = date
             self.matches = matches
         }
+    }
+    
+}
+
+extension String {
+    func getDateAsDate () -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = self
+        guard let date = dateFormatter.date(from: self) else { return Date() }
+        return date
     }
     
 }

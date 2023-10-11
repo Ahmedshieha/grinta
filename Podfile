@@ -16,6 +16,7 @@ target 'GrintaTask' do
   pod 'MOLH'
   pod 'SkeletonView'
   pod 'Moya'
+  pod 'RealmSwift', '~>10'
   
   post_install do |installer|
         

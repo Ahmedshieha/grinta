@@ -34,9 +34,18 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTL-nI-Bsp">
+                        <rect key="frame" x="110" y="24.999999999999996" width="86" height="14.333333333333332"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ggs-5x-hvd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BMQ-bK-sYR"/>
+                    <constraint firstItem="qSj-vK-5k3" firstAttribute="leading" secondItem="aTL-nI-Bsp" secondAttribute="trailing" constant="5" id="Rml-tI-nub"/>
+                    <constraint firstItem="aTL-nI-Bsp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZQo-cb-oNW"/>
+                    <constraint firstItem="aTL-nI-Bsp" firstAttribute="leading" secondItem="ggs-5x-hvd" secondAttribute="trailing" constant="5" id="d02-Z4-hIQ"/>
                     <constraint firstAttribute="trailing" secondItem="qSj-vK-5k3" secondAttribute="trailing" constant="5" id="lF9-QY-GWy"/>
                     <constraint firstItem="qSj-vK-5k3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nf1-ar-pjh"/>
                     <constraint firstItem="ggs-5x-hvd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="vXd-1E-rMr"/>
@@ -46,6 +55,7 @@
             <connections>
                 <outlet property="awayTeamName" destination="qSj-vK-5k3" id="pxf-gj-vo6"/>
                 <outlet property="homeTeamName" destination="ggs-5x-hvd" id="K0d-Ns-5An"/>
+                <outlet property="timeLeft" destination="aTL-nI-Bsp" id="rrq-Xa-yWv"/>
             </connections>
             <point key="canvasLocation" x="97.70992366412213" y="85.91549295774648"/>
         </tableViewCell>
