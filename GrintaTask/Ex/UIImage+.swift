@@ -7,7 +7,6 @@
 
 import UIKit
 import SDWebImage
-import MOLH
 extension UIImageView {
     
     func load(with url: String?, placeHolder: UIImage?, cop: ((_ image: UIImage?) -> Void)? = nil) {

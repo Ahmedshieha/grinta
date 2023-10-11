@@ -46,6 +46,7 @@ struct Match: Codable {
     let score: Score?
     let homeTeam, awayTeam: Team?
     let referees: [Referee]?
+    var favorite : Bool? = true
 }
 
 // MARK: - Team
@@ -85,3 +86,13 @@ struct Season: Codable {
 
 
 
+
+class Section  {
+    var date: String
+    var matches: [Match]
+    
+    init(date: String, matches: [Match]) {
+        self.date = date
+        self.matches = matches
+    }
+}

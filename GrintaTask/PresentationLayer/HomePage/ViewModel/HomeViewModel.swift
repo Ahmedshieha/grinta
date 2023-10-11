@@ -45,31 +45,21 @@ class HomeViewModel {
         self.dataSource =  daytransactions.map { (key , value) in
             return Section(date: String(key), matches: value)
         }
-        self.dataSource = self.dataSource.sorted(by: {$0.date < $1.date})
-       
-        
+        self.dataSource = self.dataSource.sorted(by: {$0.date < $1.date}).filter({$0.date >= getCurrentDate()})
     }
     
     
-    class Section  {
-        var date: String
-        var matches: [Match]
-        
-        init(date: String, matches: [Match]) {
-            self.date = date
-            self.matches = matches
-        }
+    func getCurrentDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd" // Customize the date format as needed
+        let currentDate = Date()
+        let dateString = dateFormatter.string(from: currentDate)
+
+        return dateString
     }
+
+    
     
 }
 
-extension String {
-    func getDateAsDate () -> Date {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        dateFormatter.dateFormat = self
-        guard let date = dateFormatter.date(from: self) else { return Date() }
-        return date
-    }
-    
-}
+

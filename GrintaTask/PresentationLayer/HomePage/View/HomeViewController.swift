@@ -120,11 +120,31 @@ extension HomeViewController : UITableViewDelegate , UITableViewDataSource {
         vm.dataSource.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(with: MatchesTableViewCell.self, for: indexPath)
         cell.configCell(match: vm.dataSource[indexPath.section].matches[indexPath.row])
+        cell.selectionStyle = .none
+        cell.addFav = {
+            self.vm.dataSource[indexPath.section].matches[indexPath.row].favorite?.toggle()
+            self.matchesTableView.reloadData()
+            print(self.vm.dataSource[indexPath.section].matches[indexPath.row].awayTeam?.name)
+        }
         return cell
     }
     
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = UIColor.lightGray
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = UIColor.black
+        header.layer.cornerRadius = 10
+        header.layer.masksToBounds = true
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+        
+    }
     
 }
