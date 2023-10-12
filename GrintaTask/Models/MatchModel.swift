@@ -34,7 +34,7 @@ struct Area : Codable {
     let name : String?
 }
 
-struct Match: Codable {
+class Match: Codable {
     let id: Int?
     let season: Season?
     let utcDate: String?
@@ -46,7 +46,21 @@ struct Match: Codable {
     let score: Score?
     let homeTeam, awayTeam: Team?
     let referees: [Referee]?
-    var favorite : Bool? = true
+    var favorite : Bool? = false
+
+//    init(matchObject : MatchObject) {
+//        self.id = matchObject.id
+//        self.utcDate = matchObject.utcDate
+//        self.status = matchObject.status
+//        self.matchday = matchObject.matchday
+//        self.stage = matchObject.stage
+//        self.lastUpdated = matchObject.lastUpdated
+//        self.score = matchObject.score
+//        self.homeTeam = matchObject.homeTeam
+//        self.awayTeam = matchObject.awayTeam
+//        self.favorite = matchObject.favorite
+//    }
+
 }
 
 // MARK: - Team
@@ -87,7 +101,7 @@ struct Season: Codable {
 
 
 
-class Section  {
+struct Section  {
     var date: String
     var matches: [Match]
     

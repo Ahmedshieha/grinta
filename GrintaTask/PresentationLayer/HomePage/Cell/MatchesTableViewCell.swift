@@ -42,14 +42,10 @@ class MatchesTableViewCell: UITableViewCell {
         } else {
             timeLeft.text = match.utcDate?.convertDate()
         }
-        
-        if match.favorite == true {
-            favoriteImage.image = UIImage(named: "heartFill")
-        }
-        else {
-            favoriteImage.image = UIImage(named: "emptyHeart")
-        }
-    }    
+        favoriteImage.image = (match.favorite ?? false) ? UIImage(named: "heartFill") : UIImage(named: "emptyHeart")
+    }
+    
+  
     
     
 }

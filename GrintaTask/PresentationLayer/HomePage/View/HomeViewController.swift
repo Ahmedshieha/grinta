@@ -56,6 +56,7 @@ class HomeViewController: BaseController {
             self.updateButtonBackgroung()
             self.vm.dataSource = []
             self.matchesTableView.reloadData()
+           
         }
     }
     
@@ -75,7 +76,7 @@ class HomeViewController: BaseController {
         switch buttonSelected {
         case.list :
             selectButton(type: .list)
-           
+            
         case.favorite :
             selectButton(type: .favorite)
         }
@@ -120,18 +121,26 @@ extension HomeViewController : UITableViewDelegate , UITableViewDataSource {
         vm.dataSource.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(with: MatchesTableViewCell.self, for: indexPath)
         cell.configCell(match: vm.dataSource[indexPath.section].matches[indexPath.row])
         cell.selectionStyle = .none
-        cell.addFav = {
-            self.vm.dataSource[indexPath.section].matches[indexPath.row].favorite?.toggle()
-            self.matchesTableView.reloadData()
-            print(self.vm.dataSource[indexPath.section].matches[indexPath.row].awayTeam?.name)
+        cell.addFav = { [weak self] in
+            guard let self else {return}
+            if let favourite = self.vm.dataSource[indexPath.section].matches[indexPath.row].favorite, favourite == true {
+                self.vm.dataSource[indexPath.section].matches[indexPath.row].favorite = false
+                self.vm.deleteId(id: self.vm.dataSource[indexPath.section].matches[indexPath.row].id ?? 0)
+            } else {
+                self.vm.dataSource[indexPath.section].matches[indexPath.row].favorite = true
+                self.vm.saveId(id: self.vm.dataSource[indexPath.section].matches[indexPath.row].id ?? 0)
+            }
+            tableView.reloadRows(at: [indexPath], with: .none)
+            
         }
         return cell
     }
+    
+   
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.tintColor = UIColor.lightGray
@@ -146,5 +155,10 @@ extension HomeViewController : UITableViewDelegate , UITableViewDataSource {
         return 70
         
     }
+
+        
+    }
+  
     
-}
+
+

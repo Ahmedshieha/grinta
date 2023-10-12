@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import RealmSwift
 
 class HomeViewModel {
     
@@ -31,13 +31,42 @@ class HomeViewModel {
                 guard let matches = data.matches else {return}
                 self.matches = matches
                 self.setSections()
+                self.matches = matches.map({ match in
+                    if self.getSavedIDs().contains(match.id ?? 0) {
+                        match.favorite = true
+                    }
+                    return match
+                })
                 self.state = .success(())
             case .failure(let error):
                 self.state = .failure(error.localizedDescription)
             }
         }
     }
+    
+    func getSavedIDs()-> [Int] {
+        let uniqueIDs = UserDefaults.standard.array(forKey: Constants.userDefualtKey) as? [Int] ?? []
+        return uniqueIDs
+    }
+    
+    func saveId(id : Int) {
+        var existingIDs = UserDefaults.standard.array(forKey: Constants.userDefualtKey) as? [Int] ?? []
+        if !existingIDs.contains(id) {
+            existingIDs.append(id)
+            UserDefaults.standard.set(existingIDs, forKey: Constants.userDefualtKey)
+            UserDefaults.standard.synchronize()
+        }
+    }
+        
+        func deleteId (id : Int) {
+            if var existingIDs = UserDefaults.standard.array(forKey: Constants.userDefualtKey) as? [Int] {
+                existingIDs.removeAll { $0 == id }
+                UserDefaults.standard.set(existingIDs, forKey: Constants.userDefualtKey)
+                UserDefaults.standard.synchronize()
+            }
+        }
  
+    
     func setSections()  {
         let daytransactions = Dictionary(grouping: matches) { (list) -> String.SubSequence in
             return list.utcDate?.prefix(10) ?? ""
