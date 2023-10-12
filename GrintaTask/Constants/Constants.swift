@@ -17,8 +17,5 @@ struct Constants {
     struct Error {
         static let networkErrorMessage = "Network Error"
     }
-
-
-    static let appURL = ""
     
 }

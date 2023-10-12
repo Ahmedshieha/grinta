@@ -216,6 +216,7 @@
 		D93E9CE92AD69E0D00178D57 /* Ex */ = {
 			isa = PBXGroup;
 			children = (
+				D9235C962AD813800069CB6B /* Helper.swift */,
 				D93E9CEA2AD69E2500178D57 /* ViewWithButtonEffect.swift */,
 				D93E9CEC2AD6A0A500178D57 /* UiColor+.swift */,
 				D93E9CF02AD6A4A200178D57 /* TableView+.swift */,
@@ -252,19 +253,18 @@
 		D9F8155E2AD5EC2000BB1D1D /* GrintaTask */ = {
 			isa = PBXGroup;
 			children = (
-				D93E9CE92AD69E0D00178D57 /* Ex */,
 				D93E9CE72AD69C8000178D57 /* Base */,
 				D93E9CD72AD5FCA200178D57 /* Models */,
 				D93E9CD12AD5FB8F00178D57 /* Network */,
 				D93E9CCE2AD5F58300178D57 /* Constants */,
 				D93E9CC52AD5F50800178D57 /* PresentationLayer */,
+				D93E9CE92AD69E0D00178D57 /* Ex */,
 				D9F8155F2AD5EC2000BB1D1D /* AppDelegate.swift */,
 				D9F815612AD5EC2000BB1D1D /* SceneDelegate.swift */,
 				D9F815632AD5EC2000BB1D1D /* ViewController.swift */,
 				D9F815682AD5EC2300BB1D1D /* Assets.xcassets */,
 				D9F8156A2AD5EC2300BB1D1D /* LaunchScreen.storyboard */,
 				D9F8156D2AD5EC2300BB1D1D /* Info.plist */,
-				D9235C962AD813800069CB6B /* Helper.swift */,
 			);
 			path = GrintaTask;
 			sourceTree = "<group>";
