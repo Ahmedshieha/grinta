@@ -21,11 +21,11 @@ after we fetch data we  need to bind it to view so i used combine to do this . b
 
 ### pod
 
-   SDWebImage
-   Alamofire
-   NVActivityIndicatorView
-   SwiftyJSON
-   Moya
+   SDWebImage ,
+   Alamofire , 
+   NVActivityIndicatorView , 
+   SwiftyJSON , 
+   Moya 
 ### Executing program
 
 to use app just clone it and install pods 
@@ -33,19 +33,13 @@ to use app just clone it and install pods
 ## Help
 
 
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
 ## Version History
 1.0
+
+
+## screenshots
 <img width="431" alt="Screenshot 2023-10-12 at 6 13 17 PM" src="https://github.com/Ahmedshieha/grinta/assets/47928824/338d888e-abed-4779-82a0-9dfc5b81c4fd">
 <img width="428" alt="Screenshot 2023-10-12 at 6 13 09 PM" src="https://github.com/Ahmedshieha/grinta/assets/47928824/6c994229-080b-4b99-912c-30b7a1feec89">
 
-## License
-
+## license 
 This project is licensed under the [Ahmedshieha] License - see the LICENSE.md file for details
