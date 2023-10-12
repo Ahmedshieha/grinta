@@ -16,8 +16,8 @@ class MatchesTableViewCell: UITableViewCell {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var favoriteButton: ViewWithButtonEffect!
     @IBOutlet weak var favoriteImage: UIImageView!
-    var addFav: (()-> ())?
     
+    var addFav: (()-> ())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -44,10 +44,6 @@ class MatchesTableViewCell: UITableViewCell {
         }
         favoriteImage.image = (match.favorite ?? false) ? UIImage(named: "heartFill") : UIImage(named: "emptyHeart")
     }
-    
-  
-    
-    
 }
 
 

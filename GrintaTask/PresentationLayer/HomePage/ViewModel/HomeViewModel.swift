@@ -52,6 +52,18 @@ class HomeViewModel {
         }
     }
     
+    func reloadFavorites() {
+        dataSource = dataSource.compactMap { section in
+            let updatedMatches = section.matches.filter { match in
+                getSavedIDs().contains(match.id ?? 0)
+            }
+            guard !updatedMatches.isEmpty else { return nil }
+            var updatedSection = section
+            updatedSection.matches = updatedMatches
+            return updatedSection
+        }
+    }
+    
     
     func getSavedIDs()-> [Int] {
         let uniqueIDs = UserDefaults.standard.array(forKey: Constants.userDefualtKey) as? [Int] ?? []

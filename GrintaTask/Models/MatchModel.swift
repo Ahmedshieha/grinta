@@ -11,8 +11,6 @@ struct BaseModel : Codable {
     let count : Int?
     let competition: Competition?
     let matches : [Match]?
-    
-    
 }
 
 
@@ -45,19 +43,6 @@ class Match: Codable {
     let homeTeam, awayTeam: Team?
     let referees: [Referee]?
     var favorite : Bool? = false
-
-//    init(matchObject : MatchObject) {
-//        self.id = matchObject.id
-//        self.utcDate = matchObject.utcDate
-//        self.status = matchObject.status
-//        self.matchday = matchObject.matchday
-//        self.stage = matchObject.stage
-//        self.lastUpdated = matchObject.lastUpdated
-//        self.score = matchObject.score
-//        self.homeTeam = matchObject.homeTeam
-//        self.awayTeam = matchObject.awayTeam
-//        self.favorite = matchObject.favorite
-//    }
 
 }
 

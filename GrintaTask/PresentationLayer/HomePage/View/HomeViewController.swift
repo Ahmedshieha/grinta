@@ -46,31 +46,23 @@ class HomeViewController: BaseController {
     
     func setupButtons() {
         selectButton(type: .list)
-        listViewButton.target  = {
+        listViewButton.target  = { [weak self] in
+            guard let self else { return }
             self.buttonSelected = .list
             self.updateButtonBackgroung()
             self.resetData()
         }
-        favoriteViewButton.target  = {
+        favoriteViewButton.target  = { [weak self] in
+            guard let self else { return }
             self.buttonSelected = .favorite
             self.updateButtonBackgroung()
-            self.reloadFavorites()
+            self.vm.reloadFavorites()
             self.matchesTableView.reloadData()
            
         }
     }
     
-    func reloadFavorites() {
-        vm.dataSource = vm.dataSource.compactMap { section in
-            let updatedMatches = section.matches.filter { match in
-                vm.getSavedIDs().contains(match.id ?? 0)
-            }
-            guard !updatedMatches.isEmpty else { return nil }
-            var updatedSection = section
-            updatedSection.matches = updatedMatches
-            return updatedSection
-        }
-    }
+   
     
     func getData () {
         Task {
@@ -100,7 +92,7 @@ extension HomeViewController  {
     
     func subscribe() {
         vm.$state.sink { [weak self] state in
-            guard let self = self else {return}
+            guard let self  else {return}
             self.handleState(state)
         }.store(in: &bag)
     }
@@ -116,6 +108,7 @@ extension HomeViewController  {
             stopLoading()
         case .failure(let error):
             showAlert(with: error)
+            stopLoading()
         }
     }
 }

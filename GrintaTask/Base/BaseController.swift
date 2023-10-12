@@ -29,13 +29,6 @@ class BaseController: UIViewController, BaseViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let vc = self.navigationController?.viewControllers.first
-//        if vc == self.navigationController?.visibleViewController {
-//            //Code Here
-//            print("root")
-//        } else {
-//            setNavigationItem()
-//        }
     }
     
     func handleScreenState<T>(_ state: ScreenState<T>) {
@@ -48,7 +41,7 @@ class BaseController: UIViewController, BaseViewProtocol {
             self.stopLoading()
         case .failure(let error):
             self.showAlert(with: error)
-            self.stopLoading()
+            
         }
  
     }
@@ -70,7 +63,15 @@ extension BaseViewProtocol  where Self : UIViewController{
     }
     
     func showAlert(with message: String) {
-        print(message)
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)
+
+        // change to desired number of seconds (in this case 5 seconds)
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when){
+          // your code with delay
+          alert.dismiss(animated: true, completion: nil)
+        }
     }
 }
 
