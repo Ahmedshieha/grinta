@@ -13,14 +13,14 @@ extension HomeViewController {
     func selectButton(type : ButtonSelection) {
         switch type {
         case .list:
-            listLabel.textColor = .hex("#47B2B3")
-            listUnderLine.backgroundColor = .hex("#47B2B3")
+            listLabel.textColor = .hex("#783D73")
+            listUnderLine.backgroundColor = .hex("#783D73")
             favoriteLabel.textColor = .hex("#8D929A")
             favoriteUnderLine.backgroundColor = .hex("#E9E9E9")
            
         case .favorite:
-            favoriteLabel.textColor = .hex("#47B2B3")
-            favoriteUnderLine.backgroundColor = .hex("#47B2B3")
+            favoriteLabel.textColor = .hex("#783D73")
+            favoriteUnderLine.backgroundColor = .hex("#783D73")
             listLabel.textColor = .hex("#8D929A")
             listUnderLine.backgroundColor = .hex("#E9E9E9")
         }

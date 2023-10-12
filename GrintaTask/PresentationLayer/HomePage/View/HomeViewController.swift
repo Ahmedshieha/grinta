@@ -54,9 +54,21 @@ class HomeViewController: BaseController {
         favoriteViewButton.target  = {
             self.buttonSelected = .favorite
             self.updateButtonBackgroung()
-            self.vm.dataSource = []
+            self.reloadFavorites()
             self.matchesTableView.reloadData()
            
+        }
+    }
+    
+    func reloadFavorites() {
+        vm.dataSource = vm.dataSource.compactMap { section in
+            let updatedMatches = section.matches.filter { match in
+                vm.getSavedIDs().contains(match.id ?? 0)
+            }
+            guard !updatedMatches.isEmpty else { return nil }
+            var updatedSection = section
+            updatedSection.matches = updatedMatches
+            return updatedSection
         }
     }
     

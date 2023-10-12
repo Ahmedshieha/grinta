@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03B27C7A043C39B6C43CE989 /* Pods_GrintaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CE3BB8CEE82AEEEB5D7F8D /* Pods_GrintaTask.framework */; };
 		D9235C952AD7E6EE0069CB6B /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9235C942AD7E6EE0069CB6B /* RealmModel.swift */; };
+		D9235C972AD813800069CB6B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9235C962AD813800069CB6B /* Helper.swift */; };
 		D93E9CCA2AD5F54F00178D57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CC82AD5F54F00178D57 /* HomeViewController.swift */; };
 		D93E9CCB2AD5F54F00178D57 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93E9CC92AD5F54F00178D57 /* HomeViewController.xib */; };
 		D93E9CCD2AD5F56000178D57 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93E9CCC2AD5F56000178D57 /* HomeViewModel.swift */; };
@@ -62,6 +63,7 @@
 		8DD2D45F16A8207E5D72CE80 /* Pods-GrintaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrintaTask.debug.xcconfig"; path = "Target Support Files/Pods-GrintaTask/Pods-GrintaTask.debug.xcconfig"; sourceTree = "<group>"; };
 		D5CE3BB8CEE82AEEEB5D7F8D /* Pods_GrintaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrintaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9235C942AD7E6EE0069CB6B /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		D9235C962AD813800069CB6B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		D93E9CC82AD5F54F00178D57 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D93E9CC92AD5F54F00178D57 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		D93E9CCC2AD5F56000178D57 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				D9F815682AD5EC2300BB1D1D /* Assets.xcassets */,
 				D9F8156A2AD5EC2300BB1D1D /* LaunchScreen.storyboard */,
 				D9F8156D2AD5EC2300BB1D1D /* Info.plist */,
+				D9235C962AD813800069CB6B /* Helper.swift */,
 			);
 			path = GrintaTask;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				D979571C2AD73072008C2C2D /* String+.swift in Sources */,
 				D93E9CFC2AD714CF00178D57 /* RealmMManager.swift in Sources */,
 				D9235C952AD7E6EE0069CB6B /* RealmModel.swift in Sources */,
+				D9235C972AD813800069CB6B /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
