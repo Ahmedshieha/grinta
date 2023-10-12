@@ -138,16 +138,9 @@ extension HomeViewController : UITableViewDelegate , UITableViewDataSource {
         cell.configCell(match: vm.dataSource[indexPath.section].matches[indexPath.row])
         cell.selectionStyle = .none
         cell.addFav = { [weak self] in
-            guard let self else {return}
-            if let favourite = self.vm.dataSource[indexPath.section].matches[indexPath.row].favorite, favourite == true {
-                self.vm.dataSource[indexPath.section].matches[indexPath.row].favorite = false
-                self.vm.deleteId(id: self.vm.dataSource[indexPath.section].matches[indexPath.row].id ?? 0)
-            } else {
-                self.vm.dataSource[indexPath.section].matches[indexPath.row].favorite = true
-                self.vm.saveId(id: self.vm.dataSource[indexPath.section].matches[indexPath.row].id ?? 0)
-            }
+            guard let self else { return }
+            self.vm.setupFavoriteLogic(at: indexPath.section, and: indexPath.row)
             tableView.reloadRows(at: [indexPath], with: .none)
-            
         }
         return cell
     }

@@ -6,10 +6,8 @@
 //
 
 import Foundation
-import RealmSwift
 
 struct BaseModel : Codable {
-    
     let count : Int?
     let competition: Competition?
     let matches : [Match]?

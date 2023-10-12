@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import RealmSwift
 
 class HomeViewModel {
     
@@ -19,7 +18,6 @@ class HomeViewModel {
     var bag = AppBag()
     
     var grouped = Dictionary<String, [Match]>()
-    
     
     @MainActor
     func getMatches () async {
@@ -43,6 +41,17 @@ class HomeViewModel {
             }
         }
     }
+    
+    func setupFavoriteLogic(at section: Int, and index: Int) {
+        if let favourite = dataSource[section].matches[index].favorite, favourite == true {
+            dataSource[section].matches[index].favorite = false
+            deleteId(id: dataSource[section].matches[index].id ?? 0)
+        } else {
+            dataSource[section].matches[index].favorite = true
+            saveId(id: dataSource[section].matches[index].id ?? 0)
+        }
+    }
+    
     
     func getSavedIDs()-> [Int] {
         let uniqueIDs = UserDefaults.standard.array(forKey: Constants.userDefualtKey) as? [Int] ?? []
