@@ -6,17 +6,15 @@ target 'GrintaTask' do
   use_frameworks!
 
   # Pods for GrintaTask
-  pod 'IQKeyboardManagerSwift'
   pod 'SDWebImage'
   pod 'Alamofire'
-  pod 'MOLH'
   pod 'NVActivityIndicatorView'
   pod 'AlamofireEasyLogger'
   pod 'SwiftyJSON'
   pod 'MOLH'
   pod 'SkeletonView'
   pod 'Moya'
-  pod 'RealmSwift', '~>10'
+  
   
   post_install do |installer|
         
