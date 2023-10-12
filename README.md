@@ -14,9 +14,11 @@ xcode 14.2
 ios Target 16.2
 simple project to display match schedules and results. it contain two screen, one for fetch results of api and the second for fetch favorites 
 first i would to talk about what architecture that i used . 
-i used mvvm (model view view model) with # combine because actually ifound that is Easier to develop ,  Easier to test and Easier to maintain. 
+i used mvvm (model view view model) with # combine because actually i found that is Easier to develop ,  Easier to test and Easier to maintain. 
 after we fetch data we  need to bind it to view so i used combine to do this . because it  include Declarative Code,Cancellability(allowing you to cancel or clean up any ongoing operations, which is especially useful for tasks like network requests and observing UI elements.)and Testability.
 
+## use
+every cell contain like button if you press on it will display in favorites screen  
 
 
 ### pod
